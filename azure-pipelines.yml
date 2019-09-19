@@ -56,7 +56,7 @@ steps:
   condition: |
     and
     (
-      succeded(),
+      succeeded(),
       eq(variables['Build.Reason'], 'PullRequest'),
       eq(variables['System.PullRequest.RargetBranch'], 'master')
     )
